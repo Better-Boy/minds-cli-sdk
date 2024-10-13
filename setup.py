@@ -6,9 +6,6 @@ about = {}
 with open("minds_cli/__about__.py") as fp:
     exec(fp.read(), about)
 
-with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "requirements.txt")) as req_file:
-    requirements = req_file.read().splitlines()
-
 def get_long_description():
     with open(
         os.path.join(os.path.dirname(os.path.abspath(__file__)), "README.md"),
@@ -38,7 +35,7 @@ setup(
         [console_scripts]
         minds=minds_cli.cli:main
     """,
-    install_requires=requirements,
+    install_requires=["click", "minds-sdk"],
     extras_require={"test": ["pytest", "pytest-mock"]},
     python_requires=">=3.7",
 )
