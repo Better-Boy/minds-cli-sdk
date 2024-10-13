@@ -2,10 +2,10 @@
 
 [![PyPI](https://img.shields.io/pypi/v/minds-cli-sdk.svg)](https://pypi.org/project/minds-cli-sdk/)
 [![Changelog](https://img.shields.io/github/v/release/Better-Boy/minds-cli-sdk?include_prereleases&label=changelog)](https://github.com/Better-Boy/minds-cli-sdk/releases)
-[![Tests](https://github.com/Better-Boy/minds-cli-sdk/actions/workflows/test.yml/badge.svg)](https://github.com/Better-Boy/minds-cli-sdk/actions/workflows/test.yml)
+[![Tests](https://github.com/Better-Boy/minds-cli-sdk/actions/workflows/test_on_push.yml/badge.svg)](https://github.com/Better-Boy/minds-cli-sdk/actions/workflows/test_on_push.yml)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/Better-Boy/minds-cli-sdk/blob/master/LICENSE)
 
-A command line tool for interacting with minds - https://mdb.ai/
+A command line tool for interacting with minds - https://mdb.ai/  
 Documentation for minds - https://docs.mdb.ai/docs/data_sources
 
 ## Installation
