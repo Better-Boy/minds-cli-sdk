@@ -1,4 +1,0 @@
-
-        [console_scripts]
-        minds=minds_cli.cli:main
-    

@@ -1,6 +1,0 @@
-click
-minds-sdk
-
-[test]
-pytest
-pytest-mock
