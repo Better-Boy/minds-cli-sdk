@@ -1,0 +1,7 @@
+__title__ = 'minds-cli-sdk'
+__package_name__ = 'minds-cli-sdk'
+__version__ = '1.0.1'
+__description__ = 'A command-line tool for interacting with minds'
+__author__ = 'Abhilash K R'
+__github__ = 'https://github.com/Better-Boy/minds-cli-sdk'
+__pypi__ = 'https://pypi.org/project/minds-cli-sdk/'
