@@ -454,3 +454,7 @@ To run the tests:
 ```bash
 python -m pytest
 ```
+
+## TODO
+
+- Chat completion - Need a valid response from minds staging env
