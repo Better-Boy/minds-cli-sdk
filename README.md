@@ -233,6 +233,7 @@ Options:
 
 Commands:
   add_datasource   Add a datasource to a mind
+  chat             Chat completion with minds
   create           Create a mind
   drop             Drop a mind
   drop_datasource  Drop a datasource to a mind
@@ -435,6 +436,44 @@ minds minds drop_datasource newMind newds
 Output:
 ```bash
 newds dropped from newMind
+```
+
+### Chat with a mind
+
+The command and the different options to be passed is as follows:
+
+```bash
+minds minds chat --help
+```
+
+Output:
+```bash
+Usage: cli.py minds chat [OPTIONS]
+
+  Chat completion with minds
+
+Options:
+  --name TEXT     name of the mind  [required]
+  --message TEXT  Chat message [required]
+  --stream        if stream is enabled, default is false
+  --help          Show this message and exit.
+```
+
+Example:
+
+```bash
+minds chat --name test --message "Hi, how are you?"
+```
+
+Enable chat streaming:
+
+```bash
+minds chat --name test --message "Hi, how are you?" --stream
+```
+
+Output:
+```bash
+I'm good today
 ```
 
 

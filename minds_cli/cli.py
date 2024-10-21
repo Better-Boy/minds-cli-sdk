@@ -118,7 +118,7 @@ def drop_datasource_mind(ctx, mind_name, datasource_name):
 
 @minds.command("chat")
 @click.option("--name", required=True, type=str, help="name of the mind")
-@click.option('--message', type=str, default=None, help="Chat message")
+@click.option('--message', required=True, type=str, default=None, help="Chat message")
 @click.option('--stream', is_flag=True, default=False, help="if stream is enabled, default is false")
 def chat(ctx, name, message, stream):
     """Chat completion with minds
