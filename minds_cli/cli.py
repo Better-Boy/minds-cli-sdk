@@ -116,6 +116,22 @@ def drop_datasource_mind(ctx, mind_name, datasource_name):
     except Exception as exc:
         click.echo(exc, err=True)
 
+@minds.command("chat")
+@click.option("--name", required=True, type=str, help="name of the mind")
+@click.option('--message', type=str, default=None, help="Chat message")
+@click.option('--stream', is_flag=True, default=False, help="if stream is enabled, default is false")
+def chat(ctx, name, message, stream):
+    """Chat completion with minds
+    """
+    client = ctx.obj.get('client')
+    try:
+        mind_obj = client.minds.get(name)
+        click.echo(
+            mind_obj.completion(message=message, stream=stream)
+        )
+    except Exception as exc:
+        click.echo(exc, err=True)
+
 
 @minds.command("create")
 @click.option("--name", required=True, type=str, help="name of the mind")
