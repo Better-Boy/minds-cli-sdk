@@ -496,4 +496,4 @@ python -m pytest
 
 ## TODO
 
-- Chat completion - Need a valid response from minds staging env
+- Chat completion testing - Need a valid response from minds staging env
